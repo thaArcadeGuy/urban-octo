@@ -1,3 +1,26 @@
+<script setup>
+const isMenuOpen = ref(false)
+
+const navigation = [
+  {
+    label: "Home",
+    to: "/",
+  },
+  {
+    label: "About",
+    to: "/about",
+  },
+  {
+    label: "Solutions",
+    to: "/solutions",
+  },
+  {
+    label: "Careers",
+    to: "/careers",
+  },
+]
+</script>
+
 <template>
   <header class="py-6">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
@@ -55,7 +78,7 @@
             />
           </div>
 
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
             <p class="text-sm text-gray-500">
               Phone Call Now!
             </p>
@@ -82,7 +105,10 @@
         </NuxtLink>
 
         <!-- Mobile Menu -->
-        <button class="laptop:hidden">
+        <button 
+          class="laptop:hidden"
+          @click="isMenuOpen = true"
+        >
           <Icon
             name="material-symbols:menu"
             size="32"
@@ -92,5 +118,91 @@
       </div>
 
     </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <Transition name="fade">
+
+      <div
+        v-if="isMenuOpen"
+        class="fixed inset-0 z-40 bg-black/50"
+        @click="isMenuOpen = false"
+      />
+
+    </Transition>
+
+
+    <!-- Mobile Drawer -->
+    <Transition name="slide">
+
+      <aside
+        v-if="isMenuOpen"
+        class="fixed right-0 top-0 z-50 flex h-full w-[320px] flex-col bg-white px-6 py-6 shadow-xl"
+      >
+
+        <!-- Close Button -->
+        <div class="flex justify-end">
+          <button
+            @click="isMenuOpen = false"
+          >
+            <Icon
+              name="material-symbols:close"
+              size="32"
+            />
+          </button>
+        </div>
+
+
+        <!-- Logo -->
+        <NuxtLink
+          to="/"
+          class="mt-6"
+          @click="isMenuOpen = false"
+        >
+          <NuxtImg
+            src="/img/scintl-logo-new.jpg"
+            alt="SCINTL logo"
+            width="130"
+          />
+        </NuxtLink>
+
+
+        <!-- Navigation -->
+        <nav class="mt-10 flex-1">
+
+          <ul class="space-y-6">
+
+            <li
+              v-for="item in navigation"
+              :key="item.to"
+            >
+
+              <NuxtLink
+                :to="item.to"
+                class="text-lg font-medium hover:text-[#7DBD4A]"
+                @click="isMenuOpen = false"
+              >
+                {{ item.label }}
+              </NuxtLink>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+        <!-- CTA -->
+        <NuxtLink
+          to="/contact"
+          class="rounded bg-[#0A4A6E] px-8 py-3 text-center font-medium text-white"
+          @click="isMenuOpen = false"
+        >
+          Get In Touch
+        </NuxtLink>
+
+
+      </aside>
+
+    </Transition>
   </header>
 </template>
