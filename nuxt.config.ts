@@ -18,6 +18,10 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
   ],
 
+   image: {
+    provider: "ipx",
+  },
+
   googleFonts: {
   families: {
     Inter: [400, 500, 600, 700],
