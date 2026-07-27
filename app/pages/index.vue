@@ -1,4 +1,11 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <!-- <HeroSection /> -->
-  <HeroMain />
+  <div>
+    <!-- <HeroSection /> -->
+    <HeroMain />
+    <PartnersCarousel />
+  </div>
 </template>

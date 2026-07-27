@@ -5,6 +5,10 @@
   --breakpoint-desktop: 1440px;
   --font-body: "Inter", sans-serif;
   --font-heading: "Manrope", sans-serif;
+  --animate-infinite-scroll: scroll 30s linear infinite;
+   /* Brand Colors */
+  --color-scintl-green: #7DBD4A;
+  --color-scintl-blue: #0A4A6E;
 }
 
 @layer base {
