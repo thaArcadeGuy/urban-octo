@@ -7,5 +7,6 @@
     <!-- <HeroSection /> -->
     <HeroMain />
     <PartnersCarousel />
+    <SolutionsSection />
   </div>
 </template>

@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 const logos = [
   { id: 1, src: '/img/partners/odoo.png', alt: 'Odoo' },
   { id: 2, src: '/img/partners/mtn.png', alt: 'MTN Uganda' },
