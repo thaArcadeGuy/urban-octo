@@ -8,5 +8,6 @@
     <HeroMain />
     <PartnersCarousel />
     <SolutionsSection />
+    <AboutSection />
   </div>
 </template>
