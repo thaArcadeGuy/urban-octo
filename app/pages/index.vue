@@ -9,5 +9,6 @@
     <PartnersCarousel />
     <SolutionsSection />
     <AboutSection />
+    <WorkProcess />
   </div>
 </template>
