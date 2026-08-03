@@ -10,5 +10,6 @@
     <SolutionsSection />
     <AboutSection />
     <WorkProcess />
+    <CtaBanner />
   </div>
 </template>
