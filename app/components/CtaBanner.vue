@@ -2,7 +2,7 @@
   <section class="py-16 bg-scintl-blue">
     <div class="container mx-auto px-4 text-center">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-2xl md:text-4xl font-bold text-white font-heading">
+        <h2 class="max-w-[600px] m-auto text-center text-2xl md:text-4xl font-bold text-white font-heading">
           Secure Identity Solutions for Africa's Future
         </h2>
         

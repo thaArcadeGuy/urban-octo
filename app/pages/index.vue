@@ -11,5 +11,6 @@
     <AboutSection />
     <WorkProcess />
     <CtaBanner />
+    <TestimonialSection/>
   </div>
 </template>

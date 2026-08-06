@@ -18,12 +18,12 @@ const partners = [
             class="rounded-xl shadow-lg w-full h-auto"
             loading="lazy"
           />
-          <!-- Optional: Partner logos row -->
+          <!-- Partner logos row -->
           <div class="flex flex-wrap gap-4 mt-4 justify-center">
             <img v-for="partner in partners" :key="partner.id" 
                  :src="partner.logo" 
                  :alt="partner.name" 
-                 class="h-8 w-auto grayscale opacity-50" />
+                 class="h-8 w-auto grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
           </div>
         </div>
 
