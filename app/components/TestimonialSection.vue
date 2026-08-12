@@ -149,7 +149,7 @@ const resumeAutoAdvance = () => {
         <!-- Navigation Buttons -->
         <button 
           @click="prevSlide"
-          class="absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-6 z-10 bg-white rounded-full p-2 md:p-3 shadow-lg hover:shadow-xl transition-all hover:bg-scintl-green hover:text-white group"
+          class="flex items-center absolute left-0 top-1/2 -translate-y-1/2 -ml-4 md:-ml-6 z-10 bg-white rounded-full p-2 md:p-3 border border-scintl-green hover:shadow-xl transition-all hover:bg-scintl-green hover:text-white group cursor-pointer"
           aria-label="Previous testimonial"
         >
           <Icon 
@@ -160,7 +160,7 @@ const resumeAutoAdvance = () => {
         
         <button 
           @click="nextSlide"
-          class="absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-10 bg-white rounded-full p-2 md:p-3 shadow-lg hover:shadow-xl transition-all hover:bg-scintl-green hover:text-white group"
+          class="flex items-center absolute right-0 top-1/2 -translate-y-1/2 -mr-4 md:-mr-6 z-10 bg-white rounded-full p-2 md:p-3 border border-scintl-green hover:shadow-xl transition-all hover:bg-scintl-green hover:text-white group cursor-pointer"
           aria-label="Next testimonial"
         >
           <Icon 

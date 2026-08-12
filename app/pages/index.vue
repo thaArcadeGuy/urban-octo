@@ -13,5 +13,6 @@
     <CtaBanner />
     <TestimonialSection/>
     <CtaBannerFinal />
+    <FooterSection />
   </div>
 </template>
