@@ -1,22 +1,12 @@
 <template>
   <div>
-    <!-- Hero / Value Proposition Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto text-center">
-          <h1 class="text-3xl md:text-5xl font-bold text-gray-800 font-heading leading-tight">
-            Ugandan-owned ICT Expertise.<br />
-            <span class="text-scintl-green">Global Technology Partnerships.</span>
-          </h1>
-          <p class="text-gray-600 mt-6 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
-            SCINTL is a Ugandan-owned ICT enterprise that implements large-scale technology 
-            projects and develops custom software for local and international clients. 
-            We bridge the gap between global innovation and local execution.
-          </p>
-        </div>
-      </div>
-    </section>
-
+    <SharedPageHero
+      background-image="/img/about/about-hero.jpg"
+      tagline="About Us"
+      headline="Ugandan-owned ICT Expertise.<br />"
+      headline-highlight="Global Technology Partnerships."
+      paragraph=" SCINTL is a Ugandan owned ICT enterprise that implements large-scale technology projects and develops custom software for local and international clients. We bridge the gap between global innovation and local execution."
+    />
     <!-- Who We Are Section -->
     <section class="py-16 bg-gray-50">
       <div class="container mx-auto px-4">
