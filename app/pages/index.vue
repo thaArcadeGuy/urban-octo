@@ -4,15 +4,14 @@
 
 <template>
   <div>
-    <!-- <HeroSection /> -->
-    <HeroMain />
-    <PartnersCarousel />
-    <SolutionsSection />
-    <AboutSection />
-    <WorkProcess />
-    <CtaBanner />
-    <TestimonialSection/>
-    <CtaBannerFinal />
-    <FooterSection />
+    <!-- <HomeHeroSection /> -->
+    <HomeHeroMain />
+    <HomePartnersCarousel />
+    <HomeSolutionsSection />
+    <HomeAboutSection />
+    <HomeWorkProcess />
+    <HomeCtaBanner />
+    <HomeTestimonialSection/>
+    <HomeCtaBannerFinal />
   </div>
 </template>

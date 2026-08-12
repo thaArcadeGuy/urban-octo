@@ -1,4 +1,7 @@
 <template>
-  <NavigationBar />
-  <slot />
+  <SharedNavigationBar />
+  <div>
+    <slot />
+  </div>
+  <SharedFooterSection />
 </template>
