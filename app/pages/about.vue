@@ -8,7 +8,7 @@
       paragraph=" SCINTL is a Ugandan owned ICT enterprise that implements large-scale technology projects and develops custom software for local and international clients. We bridge the gap between global innovation and local execution."
     />
     <AboutUs />
-    
+    <AboutValues />
 
     <!-- Our Expertise & Partnerships Section -->
     <section class="py-16 bg-white">
