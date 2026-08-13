@@ -7,27 +7,8 @@
       headline-highlight="Global Technology Partnerships."
       paragraph=" SCINTL is a Ugandan owned ICT enterprise that implements large-scale technology projects and develops custom software for local and international clients. We bridge the gap between global innovation and local execution."
     />
-    <!-- Who We Are Section -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 font-heading text-center mb-8">
-            Who We Are
-          </h2>
-          <div class="bg-white rounded-xl shadow-sm p-6 md:p-8">
-            <p class="text-gray-700 leading-relaxed mb-4">
-              <strong>SCINTL Ltd</strong> is a privately held Ugandan ICT enterprise headquartered in Kampala. 
-              We are dedicated to providing efficient, safe, and secure technology solutions that drive 
-              growth and deliver a measurable return on investment for our partners.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              Our team of experts is committed to delivering excellence in every project—from initial 
-              consultation through to ongoing support and maintenance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <AboutUs />
+    
 
     <!-- Our Expertise & Partnerships Section -->
     <section class="py-16 bg-white">
