@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 const partners = [
-  // {id: 1, logo: '/img/partners/odoo.png', name: 'Odoo' },
-  {id: 3, logo: '/img/partners/microsoft.png', name: 'Microsoft' },
-  {id: 4, logo: '/img/partners/oracle.png', name: 'Oracle' },
-  {id: 6,  logo: '/img/partners/regula.png', name: 'Regula' },
+  {id: 1, logo: '/img/partners/microsoft.png', name: 'Microsoft' },
+  {id: 2, logo: '/img/partners/oracle.png', name: 'Oracle' },
+  {id: 3, logo: '/img/partners/ibm.png', name: 'IBM' },
+  {id: 4,  logo: '/img/partners/thales.png', name: 'Thales' },
 ]
 </script>
 <template>
