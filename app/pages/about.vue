@@ -11,9 +11,10 @@
     <AboutValues />
     <AboutPartners />
     <AboutFocusAreas />
+    <AboutImpact />
 
     <!-- Our Impact Section -->
-    <section class="py-16 bg-scintl-blue text-white">
+    <!-- <section class="py-16 bg-scintl-blue text-white">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-2xl md:text-3xl font-bold font-heading mb-8">
@@ -37,7 +38,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Meet the Team (Future Addition - Placeholder) -->
     <section class="py-16 bg-white">
