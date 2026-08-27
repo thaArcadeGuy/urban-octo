@@ -7,4 +7,9 @@
     paragraph="Have a project in mind? Looking for technology solutions that deliver results? Reach out to us and let's discuss how SCINTL can help you achieve your goals."
     :overlay-opacity="60"
   />
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <ContactInfo />
+    </div>
+  </section>
 </template>
