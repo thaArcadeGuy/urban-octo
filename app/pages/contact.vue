@@ -8,8 +8,7 @@
     :overlay-opacity="60"
   />
   <section class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <ContactInfo />
-    </div>
+    <ContactInfo />
+    <ContactMap />
   </section>
 </template>
