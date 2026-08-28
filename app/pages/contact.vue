@@ -10,5 +10,6 @@
   <section class="py-16 bg-white">
     <ContactInfo />
     <ContactMap />
+    <ContactForm />
   </section>
 </template>
