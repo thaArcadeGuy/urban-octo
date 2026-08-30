@@ -14,7 +14,11 @@
 
         <!-- Content Column -->
         <div class="order-1 lg:order-2">
-          <SharedSectionHeader tagline="Who We Are" heading="Local Expertise. Global Partnerships." alignment="left"/>
+          <SharedSectionHeader 
+            tagline="Who We Are" 
+            heading="Local Expertise. Global Partnerships." 
+            alignment="left"
+          />
           
           <p class="text-gray-700 leading-relaxed mt-4 mb-4">
             SCINTL Ltd is a privately held Ugandan ICT enterprise headquartered in Kampala. 
