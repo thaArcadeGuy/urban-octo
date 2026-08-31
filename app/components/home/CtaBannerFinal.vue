@@ -5,15 +5,15 @@
         <!-- Trust Indicators -->
         <div class="flex flex-wrap justify-center gap-6 mb-8">
           <div class="flex items-center gap-2 text-white/80">
-            <Icon name="material-symbols:check-circle" class="w-5 h-5 text-scintl-green" />
+            <Icon name="material-symbols:beenhere-outline" class="w-5 h-5 text-scintl-green" />
             <span>Global Partnerships</span>
           </div>
           <div class="flex items-center gap-2 text-white/80">
-            <Icon name="material-symbols:check-circle" class="w-5 h-5 text-scintl-green" />
+            <Icon name="material-symbols:beenhere-outline" class="w-5 h-5 text-scintl-green" />
             <span>Local Expertise</span>
           </div>
           <div class="flex items-center gap-2 text-white/80">
-            <Icon name="material-symbols:check-circle" class="w-5 h-5 text-scintl-green" />
+            <Icon name="material-symbols:beenhere-outline" class="w-5 h-5 text-scintl-green" />
             <span>Proven Results</span>
           </div>
         </div>

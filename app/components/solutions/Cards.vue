@@ -5,28 +5,28 @@ const solutions = [
     icon: "material-symbols:cloud-outline", 
     title: "Cloud", 
     description: "Scalable cloud infrastructure for data storage, servers, and networking accessible on demand.",
-    link: "s/cloud"
+    link: "solutions/cloud"
   },
   {
     id: 2, 
     icon: "material-symbols:security-outline", 
     title: "Cybersecurity", 
     description: "Multi-layered security strategies that protect your computers, networks, and sensitive data.",
-    link: "s/security"
+    link: "solutions/security"
   },
   {
     id: 3, 
     icon: "material-symbols:memory-outline", 
     title: "Technology", 
     description: "End-to-end implementation of people, processes, and technology to solve business problems.",
-    link: "s/tech"
+    link: "solutions/tech"
   },
   {
     id: 4, 
     icon: "material-symbols:apartment-outline", 
     title: "Enterprise", 
     description: "Integrated business systems that unify company operations through seamless information exchange.",
-    link: "s/enterprise"
+    link: "solutions/enterprise"
   }
 ]
 </script>
