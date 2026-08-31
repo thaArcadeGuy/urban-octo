@@ -8,4 +8,5 @@
     :overlay-opacity="60"
   />
   <CareersWhy />
+  <CareersOpenings />
 </template>
