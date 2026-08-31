@@ -5,28 +5,28 @@ const solutions = [
     icon: "material-symbols:cloud-outline", 
     title: "Cloud", 
     description: "Scalable cloud infrastructure for data storage, servers, and networking accessible on demand.",
-    link: "solutions/cloud"
+    link: "s/cloud"
   },
   {
     id: 2, 
     icon: "material-symbols:security-outline", 
     title: "Cybersecurity", 
     description: "Multi-layered security strategies that protect your computers, networks, and sensitive data.",
-    link: "solutions/security"
+    link: "s/security"
   },
   {
     id: 3, 
     icon: "material-symbols:memory-outline", 
     title: "Technology", 
     description: "End-to-end implementation of people, processes, and technology to solve business problems.",
-    link: "solutions/tech"
+    link: "s/tech"
   },
   {
     id: 4, 
     icon: "material-symbols:apartment-outline", 
     title: "Enterprise", 
     description: "Integrated business systems that unify company operations through seamless information exchange.",
-    link: "solutions/enterprise"
+    link: "s/enterprise"
   }
 ]
 </script>
@@ -34,23 +34,13 @@ const solutions = [
 <template>
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
-      <!-- Section Header -->
-      <div class="flex flex-col items-start md:items-center md:text-center mb-12">
-        <h5 class="text-scintl-green font-semibold text-[1rem] uppercase tracking-wider">
-          What We Do
-        </h5>
-        <h2 class="max-w-[600px] text-3xl md:text-4xl font-bold text-gray-800 mt-2 font-heading">
-          Technology Solutions That Drive Business Growth
-        </h2>
-      </div>
-
       <!-- Solutions Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         <div v-for="solution in solutions" :key="solution.id" 
              class="flex flex-col justify-between p-6 bg-[#E5F0F7] rounded-xl hover:shadow-lg transition-shadow hover:bg-[#E8F5E9]">
           <Icon :name="solution.icon"
           size="50" class="text-scintl-green" />
-          <h3 class="text-[1.5rem] font-semibold text-gray-800 mt-4 hover:text-scintl-green">{{ solution.title }}</h3>
+          <h3 class="text-[1.5rem] font-semibold text-gray-800 mt-4 hover:text-scintl-green transi">{{ solution.title }}</h3>
           <p class="text-gray-600 mt-2 text-[1rem]">{{ solution.description }}</p>
           <NuxtLink 
             :to="solution.link" 
