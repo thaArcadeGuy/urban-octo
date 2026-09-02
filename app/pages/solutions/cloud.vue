@@ -47,6 +47,5 @@ const benefits = [
     :detailed-description="detailedDescription"
     :features="features"
     :benefits="benefits"
-    cta-text="Start Your Cloud Journey"
   />
 </template>
