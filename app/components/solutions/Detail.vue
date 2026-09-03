@@ -1,4 +1,14 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const isActive = (link: string) => {
+  const currentPath = route.path.replace(/\/$/, '')
+  const linkPath = link.replace(/\/$/, '')
+  return currentPath === linkPath
+}
+
 interface Props {
   title: string
   tagline?: string
@@ -149,15 +159,20 @@ const defaultSidebarLinks = [
                     :key="link.title"
                   >
                     <NuxtLink
+                      :key="route.fullPath"
                       :to="link.link"
-                      class="flex items-center justify-between p-3 bg-white rounded-lg hover:bg-scintl-green hover:text-white transition-all duration-300 group"
-                      :class="$route.path === link.link ? 'bg-scintl-green text-white' : 'text-gray-700'"
+                      class="flex items-center justify-between p-3 rounded-lg transition-all duration-300 group"
+                      :class="[
+                        isActive(link.link) 
+                          ? 'bg-scintl-green text-white' 
+                          : 'bg-white text-gray-700 hover:bg-scintl-green hover:text-white'
+                      ]"
                     >
                       <span class="text-sm font-medium">{{ link.title }}</span>
                       <Icon
                         name="material-symbols:arrow-forward"
                         class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-                        :class="$route.path === link.link ? 'text-white' : 'text-gray-400'"
+                        :class="isActive(link.link) ? 'text-white' : 'text-gray-400 group-hover:text-white'"
                       />
                     </NuxtLink>
                   </li>

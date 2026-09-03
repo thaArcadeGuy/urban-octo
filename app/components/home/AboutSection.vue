@@ -60,37 +60,23 @@ const partners = [
           </div>
 
           <!-- CTAs -->
-          <!-- <div class="mt-8 flex flex-wrap gap-4">
-            <NuxtLink 
-              to="/about" 
-              class="bg-scintl-green text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
+          <div class="mt-8 flex w-full flex-row justify-center gap-4 sm:w-auto sm:flex-wrap">
+            <NuxtLink
+              to="/about"
+              class="group relative inline-flex justify-center overflow-hidden rounded bg-[#7DBD4A] px-8 py-3 font-medium text-white"
             >
-              Learn More About Us →
+              <span class="absolute inset-0 -translate-x-full bg-[#0A4A6E] transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
+              <span class="relative z-10">Explore More</span>
             </NuxtLink>
-            <NuxtLink 
-              to="/contact" 
-              class="border-2 border-scintl-green text-scintl-green px-6 py-3 rounded-lg font-medium hover:bg-scintl-green hover:text-white transition-all"
-            >
-              Get a Free Consultation
-            </NuxtLink>
-          </div> -->
-          <div class="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:flex-wrap">
-          <NuxtLink
-            to="/about"
-            class="group relative inline-flex justify-center overflow-hidden rounded bg-[#7DBD4A] px-8 py-3 font-medium text-white"
-          >
-            <span class="absolute inset-0 -translate-x-full bg-[#0A4A6E] transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
-            <span class="relative z-10">Explore More</span>
-          </NuxtLink>
 
-          <NuxtLink
-            to="/contact"
-            class="group relative inline-flex justify-center overflow-hidden rounded border-2 border-[#7DBD4A] bg-transparent px-8 py-3 font-medium text-[#7DBD4A] transition-colors hover:border-[#0A4A6E] hover:text-white"
-          >
-            <span class="absolute inset-0 -translate-x-full bg-[#0A4A6E] transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
-            <span class="relative z-10">Get In Touch</span>
-          </NuxtLink>
-        </div>
+            <NuxtLink
+              to="/contact"
+              class="group relative inline-flex justify-center overflow-hidden rounded border-2 border-[#7DBD4A] bg-transparent px-8 py-3 font-medium text-[#7DBD4A] transition-colors hover:border-[#0A4A6E] hover:text-white"
+            >
+              <span class="absolute inset-0 -translate-x-full bg-[#0A4A6E] transition-transform duration-500 ease-in-out group-hover:translate-x-0"></span>
+              <span class="relative z-10">Get In Touch</span>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>

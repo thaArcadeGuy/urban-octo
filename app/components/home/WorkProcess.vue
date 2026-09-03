@@ -133,10 +133,10 @@ const isActive = (index: number) => {
               <p class="text-sm text-white/90 border-t border-white/20 pt-4">
                 {{ step.fullDescription }}
               </p>
-              <div class="mt-4 flex items-center gap-2 text-white/80 text-sm font-medium">
+              <!-- <div class="mt-4 flex items-center gap-2 text-white/80 text-sm font-medium">
                 <span>Learn more</span>
                 <Icon name="heroicons:arrow-right-20-solid" class="w-4 h-4" />
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ const isActive = (index: number) => {
             <p class="text-sm text-gray-700">
               {{ step.fullDescription }}
             </p>
-            <div class="mt-3">
+            <!-- <div class="mt-3">
               <NuxtLink 
                 :to="`/process#step-${step.id}`" 
                 class="text-scintl-green font-medium text-sm hover:underline inline-flex items-center gap-1"
@@ -185,7 +185,7 @@ const isActive = (index: number) => {
                 Learn more
                 <Icon name="heroicons:arrow-right-20-solid" class="w-4 h-4" />
               </NuxtLink>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

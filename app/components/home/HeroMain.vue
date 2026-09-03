@@ -33,7 +33,7 @@
           investment.
         </p>
 
-        <div class="flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:flex-wrap laptop:pl-12">
+        <div class="flex w-full flex-row items-center justify-center gap-4 sm:w-auto  sm:flex-wrap laptop:pl-12">
           <NuxtLink
             to="/solutions"
             class="group relative inline-flex justify-center overflow-hidden rounded bg-[#7DBD4A] px-8 py-3 font-medium text-white"
@@ -52,13 +52,13 @@
         </div>
 
         <!-- mobile/tablet  -->
-        <div class="mt-4 w-full shadow-md rounded laptop:hidden">
+        <div class="mt-4 w-full border border-gray-200  rounded-xl laptop:hidden">
           <img
             src="/img/hero-img-mobile.png"
             alt="SCINTL technology solutions"
             width="1024"
             height="1024"
-            class="block h-auto w-full object-contain"
+            class="block h-auto w-full rounded-xl object-contain"
           />
         </div>
       </div>
