@@ -33,9 +33,31 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'SCINTL | Technology Solutions',
+      titleTemplate: '%s | SCINTL',
+      htmlAttrs: {
+        lang: 'en',
+      },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+
+        { name: 'description', content: 'SCINTL is a Ugandan-owned ICT enterprise delivering cloud, cybersecurity, technology implementation, and enterprise solutions across Africa.' },
+        { name: 'theme-color', content: '#7DBD4A' },
+     
+        { property: 'og:title', content: 'SCINTL | Technology Solutions' },
+        { property: 'og:description', content: 'Ugandan-owned ICT enterprise delivering cloud, security, and enterprise technology solutions.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: 'https://www.scintl.co.ug' },
+        { property: 'og:image', content: 'https://www.scintl.co.ug/img/og-image.jpg' },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'SCINTL | Technology Solutions' },
+        { name: 'twitter:description', content: 'Ugandan-owned ICT enterprise delivering cloud, security, and enterprise technology solutions.' },
+        { name: 'twitter:image', content: 'https://www.scintl.co.ug/img/og-image.jpg' },
+
+        { name: 'robots', content: 'index, follow' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
