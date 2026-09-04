@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Contact Us | Get in Touch',
+  description: 'Contact SCINTL for cloud, cybersecurity, and enterprise technology solutions. We\'re here to help you achieve your technology goals.',
+  url: '/contact',
+  type: 'website',
+})
+</script>
+
 <template>
   <SharedPageHero
     background-image="/img/contact/contact-us.jpg"

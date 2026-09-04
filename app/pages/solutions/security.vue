@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import SolutionDetail from '~/components/solutions/Detail.vue'
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Cybersecurity | Protect Your Business',
+  description: 'SCINTL provides comprehensive cybersecurity strategies to protect your computers, networks, and sensitive data from evolving threats.',
+  url: '/solutions/security',
+  type: 'website',
+})
 
 const title = 'Cybersecurity'
 const tagline = 'Comprehensive security strategies to protect your business from evolving threats.'

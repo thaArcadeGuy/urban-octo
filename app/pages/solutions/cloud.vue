@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import SolutionDetail from '~/components/solutions/Detail.vue'
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Cloud Solutions | Scalable Infrastructure',
+  description: 'SCINTL delivers scalable, secure cloud infrastructure for data storage, servers, and networking—accessible on demand.',
+  url: '/solutions/cloud',
+  type: 'website',
+})
 
 const title = 'Cloud Solutions'
 const tagline = 'Scalable, secure, and accessible cloud infrastructure for modern businesses.'

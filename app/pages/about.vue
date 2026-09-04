@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'About Us | Ugandan ICT Expertise',
+  description: 'Learn about SCINTL - a Ugandan-owned ICT enterprise with global partnerships delivering technology solutions across Africa.',
+  url: '/about',
+  type: 'website',
+})
+</script>
+
 <template>
   <div>
     <SharedPageHero

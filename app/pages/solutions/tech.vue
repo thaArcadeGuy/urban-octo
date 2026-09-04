@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import SolutionDetail from '~/components/solutions/Detail.vue'
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Technology Implementation | End-to-End Solutions',
+  description: 'SCINTL delivers end-to-end technology implementation of people, processes, and technology to solve business problems.',
+  url: '/solutions/tech',
+  type: 'website',
+})
 
 const title = 'Technology Implementation'
 const tagline = 'End-to-end implementation of people, processes, and technology to solve business problems.'

@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Careers | Join Our Team',
+  description: 'Join SCINTL\'s team and help deliver technology solutions that transform businesses and communities across Africa.',
+  url: '/careers',
+  type: 'website',
+})
+</script>
+
 <template>
   <SharedPageHero
     background-image="/img/careers/careers.jpg"

@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { useSeo } from '~/composables/useSeo'
+
+useSeo({
+  title: 'Technology Solutions | Cloud, Security & Enterprise',
+  description: 'Explore SCINTL\'s technology solutions including cloud infrastructure, cybersecurity, technology implementation, and enterprise systems.',
+  url: '/solutions',
+  type: 'website',
+})
+</script>
 <template>
   <SharedPageHero
     background-image="/img/solutions/solutions-hero.jpg"
