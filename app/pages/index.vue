@@ -38,7 +38,9 @@ useHead({
 <template>
   <div>
     <!-- <HomeHeroSection /> -->
-    <HomeHeroMain />
+     <section class="pt-22 laptop:pt-24">
+      <HomeHeroMain />
+    </section>
     <HomePartnersCarousel />
     <HomeSolutionsSection />
     <HomeAboutSection />

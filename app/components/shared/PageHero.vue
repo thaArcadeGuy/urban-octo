@@ -32,7 +32,7 @@ const overlayOpacityClass = computed(() => {
 
 <template>
   <section 
-    class="relative py-20 md:py-28 lg:py-36 overflow-hidden"
+    class="relative py-20 mt-20 md:py-28  lg:py-36 overflow-hidden"
     :class="className"
   >
     <!-- Background Image -->

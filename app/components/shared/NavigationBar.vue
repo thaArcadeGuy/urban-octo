@@ -1,5 +1,8 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
+
 const isMenuOpen = ref(false)
+const isScrolled = ref(false)
 
 const navigation = [
   {
@@ -19,16 +22,37 @@ const navigation = [
     to: "/careers",
   },
 ]
+
+// Handle scroll event
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 50
+}
+
+// Add/remove scroll listener
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-  <header class="py-6">
+  <header 
+    class="fixed top-0 left-0 w-full z-50 transition-all bg-red duration-300"
+    :class="[
+      isScrolled 
+        ? 'bg-[#E5F0F7] shadow-md py-4' 
+        : 'bg-white py-6'
+    ]"
+  >
     <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10">
 
       <!-- Logo -->
       <NuxtLink to="/" class="shrink-0">
         <NuxtImg
-          src="/img/scintl-logo-new.jpg"
+          src="/img/scintl-logo.png"
           alt="SCINTL logo"
           width="130"
         />
@@ -206,3 +230,25 @@ const navigation = [
     </Transition>
   </header>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+</style>
