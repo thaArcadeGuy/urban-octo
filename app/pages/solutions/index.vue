@@ -2,7 +2,7 @@
 import { useSeo } from '~/composables/useSeo'
 
 useSeo({
-  title: 'Technology Solutions | Cloud, Security & Enterprise',
+  title: 'Solutions | Cloud, Security, Technology & Enterprise',
   description: 'Explore SCINTL\'s technology solutions including cloud infrastructure, cybersecurity, technology implementation, and enterprise systems.',
   url: '/solutions',
   type: 'website',

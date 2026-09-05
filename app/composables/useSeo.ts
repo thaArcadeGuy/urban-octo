@@ -13,7 +13,7 @@ interface SeoConfig {
 
 export const useSeo = (config: SeoConfig) => {
   const siteUrl = 'https://www.scintl.co.ug'
-  const defaultImage = `${siteUrl}/img/og-image.jpg`
+  const defaultImage = `${siteUrl}/img/scintl-logo.png`
   
   const title = config.title
   const description = config.description

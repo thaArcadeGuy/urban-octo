@@ -1,5 +1,20 @@
 import tailwindcss from "@tailwindcss/vite";
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
+declare module 'nuxt/schema' {
+  interface NuxtConfig {
+    sitemap?: {
+      hostname?: string
+      gzip?: boolean
+      exclude?: string[]
+      defaults?: {
+        changefreq?: string
+        priority?: number
+        lastmod?: string
+      }
+    }
+  }
+}
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -16,9 +31,21 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/sitemap",
+    "nuxt-og-image"
   ],
 
-   image: {
+  sitemap: {
+    hostname: 'https://www.scintl.co.ug',
+    gzip: true,
+    exclude: ['/admin/**', '/dashboard/**'],
+    defaults: {
+      changefreq: 'daily',
+      priority: 0.8,
+    },
+  },
+
+  image: {
     provider: "ipx",
   },
 
@@ -30,6 +57,7 @@ export default defineNuxtConfig({
   display: "swap",
   preload: true,
   },
+  
   app: {
     head: {
       title: 'SCINTL | Technology Solutions',
@@ -48,14 +76,14 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Ugandan-owned ICT enterprise delivering cloud, security, and enterprise technology solutions.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://www.scintl.co.ug' },
-        { property: 'og:image', content: 'https://www.scintl.co.ug/img/og-image.jpg' },
+        { property: 'og:image', content: 'https://www.scintl.co.ug/img/scintl-logo.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
 
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'SCINTL | Technology Solutions' },
         { name: 'twitter:description', content: 'Ugandan-owned ICT enterprise delivering cloud, security, and enterprise technology solutions.' },
-        { name: 'twitter:image', content: 'https://www.scintl.co.ug/img/og-image.jpg' },
+        { name: 'twitter:image', content: 'https://www.scintl.co.ug/img/scintl-logo.png' },
 
         { name: 'robots', content: 'index, follow' },
       ],

@@ -3,7 +3,7 @@ import SolutionDetail from '~/components/solutions/Detail.vue'
 import { useSeo } from '~/composables/useSeo'
 
 useSeo({
-  title: 'Cloud Solutions | Scalable Infrastructure',
+  title: 'Cloud | Scalable Infrastructure',
   description: 'SCINTL delivers scalable, secure cloud infrastructure for data storage, servers, and networking—accessible on demand.',
   url: '/solutions/cloud',
   type: 'website',

@@ -3,7 +3,7 @@ import SolutionDetail from '~/components/solutions/Detail.vue'
 import { useSeo } from '~/composables/useSeo'
 
 useSeo({
-  title: 'Enterprise Solutions - Integrated Business Systems',
+  title: 'Enterprise | Integrated Business Systems',
   description: 'SCINTL delivers integrated business systems that unify company operations through seamless information exchange.',
   url: '/solutions/enterprise',
   type: 'website',
