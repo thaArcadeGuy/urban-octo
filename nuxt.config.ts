@@ -1,20 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
 
-declare module 'nuxt/schema' {
-  interface NuxtConfig {
-    sitemap?: {
-      hostname?: string
-      gzip?: boolean
-      exclude?: string[]
-      defaults?: {
-        changefreq?: string
-        priority?: number
-        lastmod?: string
-      }
-    }
-  }
-}
-
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -35,18 +20,24 @@ export default defineNuxtConfig({
     "nuxt-og-image"
   ],
 
+   site: {
+    url: 'https://www.scintl.co.ug',
+    name: 'SCINTL'
+  },
+
   sitemap: {
-    hostname: 'https://www.scintl.co.ug',
     gzip: true,
     exclude: ['/admin/**', '/dashboard/**'],
     defaults: {
       changefreq: 'daily',
       priority: 0.8,
     },
-  },
+  } as any,
 
   image: {
-    provider: "ipx",
+    // provider: "ipx",
+    provider: "netlify",
+    format: ["webp"]
   },
 
   googleFonts: {

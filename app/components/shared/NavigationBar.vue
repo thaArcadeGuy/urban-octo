@@ -23,12 +23,10 @@ const navigation = [
   },
 ]
 
-// Handle scroll event
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50
 }
 
-// Add/remove scroll listener
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 })

@@ -98,21 +98,21 @@ const currentYear = computed(() => new Date().getFullYear())
                   class="flex items-center shrink-0 p-2 rounded-full hover:bg-scintl-green/10 transition-all"
                   aria-label="LinkedIn"
                 >
-                  <Icon name="ri:linkedin-fill" class="w-6 h-6 text-gray-600 hover:text-scintl-green transition-colors" />
+                  <Icon name="ri:linkedin-fill" class="w-8 h-8 text-gray-600 hover:text-scintl-green transition-colors" />
                 </NuxtLink>
                 <NuxtLink 
                   to="http://www.twitter.com/ScintlUG" 
                   class="flex items-center shrink-0 p-2 rounded-full hover:bg-scintl-green/10 transition-all"
                   aria-label="Twitter / X"
                 >
-                  <Icon name="ri:twitter-x-fill" class="w-6 h-6 text-gray-600 hover:text-scintl-green transition-colors" />
+                  <Icon name="ri:twitter-x-fill" class="w-8 h-8 text-gray-600 hover:text-scintl-green transition-colors" />
                 </NuxtLink>
                 <NuxtLink 
                   to="https://www.instagram.com/scintl_ug" 
                   class="flex items-center shrink-0 p-2 rounded-full hover:bg-scintl-green/10 transition-all"
                   aria-label="Instagram"
                 >
-                  <Icon name="ri:instagram-fill" class="w-6 h-6 text-gray-600 hover:text-scintl-green transition-colors" />
+                  <Icon name="ri:instagram-fill" class="w-8 h-8 text-gray-600 hover:text-scintl-green transition-colors" />
                 </NuxtLink>
               </div>
             </div>
