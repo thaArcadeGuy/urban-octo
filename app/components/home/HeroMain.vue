@@ -33,7 +33,7 @@
           investment.
         </p>
 
-        <div class="flex w-full flex-row items-center justify-center gap-4 sm:w-auto  sm:flex-wrap laptop:pl-12">
+        <div class="flex w-full flex-col gap-4 sm:w-auto  sm:flex-row laptop:pl-12">
           <NuxtLink
             to="/solutions"
             class="group relative inline-flex justify-center overflow-hidden rounded bg-[#7DBD4A] px-8 py-3 font-medium text-white"

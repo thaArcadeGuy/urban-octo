@@ -60,7 +60,7 @@ const partners = [
           </div>
 
           <!-- CTAs -->
-          <div class="mt-8 flex w-full flex-row justify-center gap-4 sm:w-auto sm:flex-wrap">
+          <div class="mt-8 flex w-full flex-col gap-4 sm:flex-row sm:w-auto sm:flex-wrap">
             <NuxtLink
               to="/about"
               class="group relative inline-flex justify-center overflow-hidden rounded bg-[#7DBD4A] px-8 py-3 font-medium text-white"
